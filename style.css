@@ -1,21 +1,79 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'JelleeBold';
+   font-weight: normal;
+   font-style: normal;
+}
+
+body{
+    background-color: #053B50;
 }
 
 .gameBoard{
     display: grid;
     grid-template-columns: repeat(3,150px);
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .gameArea{
     width: 150px;
     height: 150px;
-    border: 1px solid black;
-    background-color: bisque;
+    border: 1px solid white;
+    background-color: #176B87;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#93C6E7; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #64CCC5;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    width: 20%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+  }
+  
+  #restart{
+    width: 150px;
+    height: 30px;
+    background-color: #EEEEEE;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: 50px;
+  }
+
+#title{
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.turn{
+    font-size: 30px;
 }
